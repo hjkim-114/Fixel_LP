@@ -223,7 +223,7 @@ a#btn-register-header:after {
     width: 24px;
     height: 24px;
     margin: -3px 0 0 5px;
-    background: url("keyboard_arrow_right.svg") no-repeat;
+    background: url("images/icon/keyboard_arrow_right.svg") no-repeat;
     background-size: contain;
     vertical-align: middle;
 }
@@ -263,7 +263,7 @@ a#btn-register-header:hover {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url(main-visual.svg);
+    background-image: url(images/first-view/main-visual.svg);
     background-color: var(--lp-fixel-blue-dark);
 }
 
@@ -273,7 +273,7 @@ a#btn-register-header:hover {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url(Circle_Group.png);
+    background-image: url(images/first-view/Circle_Group.png);
     background-color: var(--lp-fixel-blue-dark);
     margin-bottom: 16px;
 }
@@ -370,7 +370,7 @@ a.btn-register:after {
     width: 24px;
     height: 24px;
     margin: -3px 0 0 5px;
-    background: url("keyboard_arrow_right.svg") no-repeat;
+    background: url("images/icon/keyboard_arrow_right.svg") no-repeat;
     background-size: contain;
     vertical-align: middle;
 }
@@ -381,7 +381,7 @@ a.btn-register:after {
 }
 
 a#first-view-register-btn:after {
-    background: url("keyboard_arrow_right_blue.svg") no-repeat;
+    background: url("images/icon/keyboard_arrow_right_blue.svg") no-repeat;
 }
 
 #first-view-register-detail {
@@ -627,7 +627,7 @@ right: 20px;
 transform: translateY(-50%);
 }
 .faq-box > dl > dt .crossBar::before {
-content: url(plus.svg);
+content: url(images/icon/plus.svg);
 display: inline-block;
 position: absolute;
 top: 0;
