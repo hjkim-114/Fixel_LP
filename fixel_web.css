@@ -793,6 +793,23 @@ transform: translateX(-50%) rotate(45deg);  /* 90度回転 */
     margin-bottom: 8px;
     gap: 8px;
 }
+
+.error-message {
+    font-size: 12px;
+    color: var(--lp-error);
+    display: none;
+}
+
+
+input:invalid {
+    border: solid 1px var(--lp-error);
+}
+
+input:invalid + .error-message  {
+    display: block;
+}
+
+
 #agree {
     text-align: center;
     color: var(--lp-black, #222224);
