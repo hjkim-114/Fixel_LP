@@ -809,7 +809,6 @@ input:invalid + .error-message  {
     display: block;
 }
 
-
 #agree {
     text-align: center;
     color: var(--lp-black, #222224);
@@ -818,6 +817,34 @@ input:invalid + .error-message  {
     line-height: 175%;
     letter-spacing: 0.48px;
     margin-bottom: 8px;
+}
+
+#privacy-policy {
+    max-width: 772px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+    gap: 56px;
+    border-radius: 16px;
+}
+
+.popup {
+    padding: 40px 64px 24px 64px;
+}
+
+.content {
+    text-align: left;
+}
+
+#close-btn {
+    background-color: var(--lp-white);
+    border: solid 1px var(--lp-black);
+    border-radius: 8px;
+    width: 152px;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
 }
 
 .Fixel-page {
