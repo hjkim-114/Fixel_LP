@@ -22,6 +22,7 @@ header, body, footer, h1, h2, h3, h4, h5, ul {
     --lp-white: #fff;
     --lp-yellow: #F9CA53; 
     --lp-dark-blue-2-hover: #19469C;
+    --lp-yellow-hover: #F3D382;
 }
 
 
@@ -190,6 +191,14 @@ h5, td {
 /*CSS*/
 
 header {
+    position: fixed;
+    width: 100%; 
+    height: 48px; 
+    background-color: var(--lp-white);
+    z-index: 2;
+}
+
+.top-header {
     display: flex;
     height: 48px;
     padding-left: 16px;
@@ -235,7 +244,7 @@ a#btn-register-header:hover {
 }
 
 .first-view {
-    padding: 24px 20px 32px 20px;
+    padding: 72px 20px 32px 20px;
     background-color: var(--lp-fixel-blue-dark);
 }
 
@@ -374,6 +383,9 @@ a.btn-register:after {
     vertical-align: middle;
 }
 
+a.btn-register:hover {
+    background: var(--lp-dark-blue-2-hover);
+}
 #first-view-register-btn {
     color: var(--lp-dark-blue-2) !important;
     background: var(--lp-yellow);
@@ -381,6 +393,10 @@ a.btn-register:after {
 
 a#first-view-register-btn:after {
     background: url("images/icon/keyboard_arrow_right_blue.svg") no-repeat;
+}
+
+a#first-view-register-btn:hover {
+    background: var(--lp-yellow-hover);
 }
 
 #first-view-register-detail {
@@ -633,7 +649,7 @@ width: 100%;
 max-width: 343px;
 margin: 0 auto;
 position: relative;
-z-index: 10;
+z-index: 0;
 border-bottom: 1px solid var(--lp-border);
 }
 
@@ -995,6 +1011,10 @@ footer {
     
     header {
         height: 80px;
+    }
+
+    .top-header {
+        height: 80px;
         padding-left: 48px;
     }
     
@@ -1012,7 +1032,14 @@ footer {
     }
     
     .first-view {
-        padding: 0;
+        padding: auto;
+        padding-top: 80px;
+    }
+
+    .first-view-page {
+        max-width: 1250px;
+        height: 650px;
+        margin: auto;
     }
 
     .first-view-text {
@@ -1020,7 +1047,7 @@ footer {
         height: 465px;
         padding-top: 80px;
         position: relative;
-        z-index: 2;
+        z-index: 1;
         margin: 0 auto;
     }
     
@@ -1043,9 +1070,9 @@ footer {
     .first-view-wrapper-image {
         width: 657.096px;
         height: 493.442px;
-        position: absolute;
-        right: 340px;
-        top: 215px;
+        position: relative;
+        left: 576px;
+        bottom: 401px;
         z-index: 0;
         background-image: url(images/first-view/main-visual.svg);
         background-color: var(--lp-fixel-blue-dark);
@@ -1055,8 +1082,8 @@ footer {
         width: 424px;
         height: 130px;
         position: relative;
-        left: 347px;
-        bottom: 234px;
+        left: 20px;
+        bottom: 746px;
         z-index: 0;
         background-image: url(images/first-view/Circle_Group2.png);
         background-color: var(--lp-fixel-blue-dark);
@@ -1070,7 +1097,7 @@ footer {
     .contact-box#first-view-contact-box {
         position: relative;
         right: 392px;
-        bottom: 218px;
+        bottom: 727px;
         padding-bottom: 30px;
         margin-top: 0px;
         margin-bottom: 0px;
@@ -1403,12 +1430,16 @@ footer {
     
     .request {
         padding: 120px 340px;
+        display: flex;
+        justify-content: center;
     }
     
     .request-box-border {
         border-radius: 16px;
         padding: 64px 140px;
         gap: 24px;
+        min-width: 700px;
+        
     }
     
     .request-title-explain{
@@ -1431,10 +1462,15 @@ footer {
     
     .form {
         width: 600px;
+        min-width: 500px;
+    }
+
+    .form-box {
+        min-width: 500px;
     }
     
     .form-text {
-        width: 600px;
+        width: 100%;
         height: 44px;
         padding: 0 12px;
         border-radius: 4px;
