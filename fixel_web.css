@@ -822,9 +822,7 @@ input:invalid + .error-message  {
 #privacy-policy {
     max-width: 772px;
     text-align: center;
-    display: flex;
     flex-direction: column;
-    
     gap: 56px;
     border-radius: 16px;
 }
@@ -837,7 +835,7 @@ input:invalid + .error-message  {
     text-align: left;
 }
 
-#close-btn {
+#close {
     background-color: var(--lp-white);
     border: solid 1px var(--lp-black);
     border-radius: 8px;

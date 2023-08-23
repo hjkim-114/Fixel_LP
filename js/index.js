@@ -26,13 +26,24 @@
         const dialog = document.getElementById("privacy-policy");
         const closeBtn = dialog.querySelector("#close");
       
-        spanopen.addEventListener("click", () => {
-          dialog.showModal();
-        });
+        spanopen.removeEventListener("click", openPrivacyPolicy); // Remove existing listeners
+        closeBtn.removeEventListener("click", closeDialog);
       
-        closeBtn.addEventListener("click", (event) => {
-          event.preventDefault();
-          dialog.close();
-        });
-      });
+        spanopen.addEventListener("click", openPrivacyPolicy);
+        closeBtn.addEventListener("click", closeDialog);
+    });
+      
+      function openPrivacyPolicy() {
+        const dialog = document.getElementById("privacy-policy");
+        dialog.showModal();
+      }
+      
+      function closeDialog(event) {
+        event.preventDefault();
+        const dialog = document.getElementById("privacy-policy");
+        dialog.close();
+      }
+    
+      
+      
 }
