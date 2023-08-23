@@ -21,4 +21,18 @@
         child.classList.toggle('is-open');
     }
 
+    document.addEventListener("DOMContentLoaded", () => {
+        const spanopen = document.getElementById("openspan");
+        const dialog = document.getElementById("privacy-policy");
+        const closeBtn = dialog.querySelector("#close");
+      
+        spanopen.addEventListener("click", () => {
+          dialog.showModal();
+        });
+      
+        closeBtn.addEventListener("click", (event) => {
+          event.preventDefault();
+          dialog.close();
+        });
+      });
 }
